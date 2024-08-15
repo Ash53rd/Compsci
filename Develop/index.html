@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex Tutorial: Email Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Regex Tutorial: Email Validation</h1>
+    </header>
+    <main>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Welcome to this regex tutorial! As a web development student,
+          understanding regular expressions (regex) is crucial for pattern
+          matching and input validation. This tutorial will break down a regex
+          pattern used for email validation, explaining each component to help
+          you understand how it works.
+        </p>
+      </section>
+
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>
+          This tutorial will explain the following regex pattern used for email
+          validation:
+        </p>
+        <pre><code>^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$</code></pre>
+        <p>
+          This regex pattern is designed to match valid email addresses by
+          breaking them down into three main parts: the local part (before the
+          @), the domain name, and the top-level domain.
+        </p>
+      </section>
+
+      <section id="table-of-contents">
+        <h2>Table of Contents</h2>
+        <ul>
+          <li><a href="#anchors">Anchors</a></li>
+          <li><a href="#quantifiers">Quantifiers</a></li>
+          <li><a href="#or-operator">OR Operator</a></li>
+          <li><a href="#character-classes">Character Classes</a></li>
+          <li><a href="#flags">Flags</a></li>
+          <li><a href="#grouping-and-capturing">Grouping and Capturing</a></li>
+          <li><a href="#bracket-expressions">Bracket Expressions</a></li>
+          <li><a href="#greedy-and-lazy-match">Greedy and Lazy Match</a></li>
+          <li><a href="#boundaries">Boundaries</a></li>
+          <li><a href="#back-references">Back-references</a></li>
+          <li>
+            <a href="#look-ahead-and-look-behind">Look-ahead and Look-behind</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="regex-components">
+        <h2>Regex Components</h2>
+
+        <section id="anchors">
+          <h3>Anchors</h3>
+          <ul>
+            <li><code>^</code>: Marks the start of the string</li>
+            <li><code>$</code>: Marks the end of the string</li>
+          </ul>
+          <p>
+            These anchors ensure that the regex matches the entire string from
+            start to finish, preventing partial matches.
+          </p>
+        </section>
+
+        <section id="quantifiers">
+          <h3>Quantifiers</h3>
+          <ul>
+            <li><code>+</code>: Matches one or more of the preceding token</li>
+            <li>
+              <code>{2,6}</code>: Matches between 2 and 6 of the preceding token
+            </li>
+          </ul>
+          <p>
+            In our regex, <code>+</code> is used for the local part and domain
+            name, allowing them to be of any length greater than zero.
+            <code>{2,6}</code> is used for the top-level domain, restricting it
+            to between 2 and 6 characters.
+          </p>
+        </section>
+
+        <!-- Add more sections for each component -->
+      </section>
+
+      <section id="author">
+        <h2>Author</h2>
+        <p>
+          This tutorial was created by Ash, a web development student passionate
+          about understanding and explaining complex concepts. Check out my
+          other projects on <a href="https://github.com/Ash53rd">GitHub</a>.
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
